@@ -85,6 +85,13 @@ export const Terminal = ({ className, size }: IconProps) => (
   </svg>
 );
 
+export const Eye = ({ className, size }: IconProps) => (
+  <svg viewBox="0 0 24 24" className={className} {...base(size)}>
+    <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z" />
+    <circle cx="12" cy="12" r="3" />
+  </svg>
+);
+
 export const Sparkle = ({ className, size }: IconProps) => (
   <svg viewBox="0 0 24 24" className={className} {...base(size)}>
     <path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8" />

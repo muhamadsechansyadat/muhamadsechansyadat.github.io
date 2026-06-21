@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { profile, openTo } from "@/lib/data";
-import { ArrowUpRight, Download, Github, Linkedin, Mail, MapPin } from "./Icon";
+import { ArrowUpRight, Eye, Github, Linkedin, Mail, MapPin } from "./Icon";
 
 export default function Hero() {
   return (
@@ -114,12 +114,11 @@ export default function Hero() {
               <ArrowUpRight size={14} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </a>
             <a
-              href={profile.cv}
-              download="Muhamad_Sechan_Syadat_CV.pdf"
+              href="#cv"
               className="group inline-flex items-center gap-2 rounded-md border border-[var(--color-line-2)] bg-[var(--color-surface)] px-4 py-2.5 text-[13px] font-semibold text-[var(--color-bone)] hover:border-[var(--color-acid)]/60 hover:text-[var(--color-acid)] transition"
             >
-              <Download size={15} />
-              Download CV
+              <Eye size={15} />
+              Preview CV
             </a>
             <a
               href={profile.linkedin}

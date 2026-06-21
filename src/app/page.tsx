@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Contact from "@/components/Contact";
+import CvModal from "@/components/CvModal";
 import EducationLanguages from "@/components/EducationLanguages";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
@@ -22,6 +23,7 @@ export default function HomePage() {
       <EducationLanguages />
       <Contact />
       <Footer />
+      <CvModal />
     </main>
   );
 }
