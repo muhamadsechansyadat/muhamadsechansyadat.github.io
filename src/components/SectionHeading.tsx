@@ -13,11 +13,11 @@ export default function SectionHeading({ number, kicker, title, description }: P
         <span className="h-px w-8 bg-[var(--color-line-2)]" />
         <span>{kicker}</span>
       </div>
-      <h2 className="font-[family-name:var(--font-display)] text-3xl lg:text-4xl tracking-[-0.02em] font-semibold text-[var(--color-bone)]">
+      <h2 className="font-[family-name:var(--font-display)] text-[26px] sm:text-3xl lg:text-4xl tracking-[-0.02em] font-semibold text-[var(--color-bone)]">
         {title}
       </h2>
       {description && (
-        <p className="mt-3 max-w-2xl text-[14px] text-[var(--color-fog)] leading-relaxed">
+        <p className="mt-3 max-w-2xl text-[13.5px] sm:text-[14px] text-[var(--color-fog)] leading-relaxed">
           {description}
         </p>
       )}

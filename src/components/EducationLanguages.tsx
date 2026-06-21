@@ -3,8 +3,8 @@ import SectionHeading from "./SectionHeading";
 
 export default function EducationLanguages() {
   return (
-    <section id="learning" className="relative py-20 lg:py-28 border-t border-[var(--color-line)]/60">
-      <div className="mx-auto max-w-6xl px-5 lg:px-8">
+    <section id="learning" className="relative py-16 sm:py-20 lg:py-28 border-t border-[var(--color-line)]/60">
+      <div className="mx-auto max-w-6xl px-4 sm:px-5 lg:px-8">
         <SectionHeading
           number="05"
           kicker="Background"
@@ -63,7 +63,7 @@ export default function EducationLanguages() {
                 Working style
               </div>
               <div className="flex flex-wrap gap-2">
-                {["Remote", "Hybrid", "On-site", "Async-friendly", "Agile / Scrum"].map((t) => (
+                {["On-site", "Hybrid", "Remote", "Async-friendly", "Agile / Scrum"].map((t) => (
                   <span
                     key={t}
                     className="rounded-md border border-[var(--color-line)] bg-[var(--color-surface)]/60 px-2.5 py-1 text-[11.5px] text-[var(--color-fog)]"

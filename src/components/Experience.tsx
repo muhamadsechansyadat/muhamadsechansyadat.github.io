@@ -3,8 +3,8 @@ import SectionHeading from "./SectionHeading";
 
 export default function Experience() {
   return (
-    <section id="experience" className="relative py-20 lg:py-28 border-t border-[var(--color-line)]/60">
-      <div className="mx-auto max-w-6xl px-5 lg:px-8">
+    <section id="experience" className="relative py-16 sm:py-20 lg:py-28 border-t border-[var(--color-line)]/60">
+      <div className="mx-auto max-w-6xl px-4 sm:px-5 lg:px-8">
         <SectionHeading
           number="03"
           kicker="Experience"

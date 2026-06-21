@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Muhamad Sechan Syadat — Software Engineer",
   description:
-    "Software Engineer with 5+ years building scalable backend and full-stack systems with Laravel, Golang, Node.js, React, and Next.js. Available for remote, hybrid, and on-site roles.",
+    "Software Engineer with 5+ years building scalable backend and full-stack systems with Laravel, Golang, Node.js, React, and Next.js. Available for on-site, hybrid, and remote roles.",
   keywords: [
     "Muhamad Sechan Syadat",
     "Software Engineer",

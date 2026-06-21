@@ -4,7 +4,7 @@ import { ArrowUpRight, Eye, Github, Linkedin, Mail, MapPin } from "./Icon";
 
 export default function Hero() {
   return (
-    <section id="top" className="scene-3d relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+    <section id="top" className="scene-3d relative pt-28 sm:pt-32 lg:pt-40 pb-16 sm:pb-20 lg:pb-28 overflow-hidden">
       {/* ── 3D background scene ── */}
       <div aria-hidden className="absolute inset-0 pointer-events-none">
         {/* Static grid + scanlines */}
@@ -55,7 +55,7 @@ export default function Hero() {
       </div>
 
       {/* ── Content ── */}
-      <div className="relative mx-auto max-w-6xl px-5 lg:px-8 grid lg:grid-cols-[1fr_auto] gap-12 lg:gap-16 items-center">
+      <div className="relative mx-auto max-w-6xl px-4 sm:px-5 lg:px-8 grid lg:grid-cols-[1fr_auto] gap-10 sm:gap-12 lg:gap-16 items-center">
         <div className="fade-up">
           {/* Status line */}
           <div className="inline-flex items-center gap-2 rounded-full border border-[var(--color-line-2)] bg-[var(--color-surface)]/70 px-3 py-1 text-[11px] text-[var(--color-fog)] mb-6 backdrop-blur-sm">
@@ -75,7 +75,7 @@ export default function Hero() {
             <span className="ml-2 text-[var(--color-acid)] animate-blink">▌</span>
           </div>
 
-          <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-[64px] leading-[1.05] tracking-[-0.02em] font-semibold text-[var(--color-bone)]">
+          <h1 className="font-[family-name:var(--font-display)] text-[34px] sm:text-5xl lg:text-[64px] leading-[1.05] tracking-[-0.02em] font-semibold text-[var(--color-bone)]">
             {profile.name.split(" ").map((word, i) => (
               <span key={i} className="inline-block mr-3">
                 {word}
@@ -83,20 +83,20 @@ export default function Hero() {
             ))}
           </h1>
 
-          <p className="mt-5 max-w-2xl text-[15px] sm:text-base text-[var(--color-fog)] leading-relaxed">
+          <p className="mt-5 max-w-2xl text-[14px] sm:text-[15px] lg:text-base text-[var(--color-fog)] leading-relaxed">
             <span className="text-[var(--color-bone)] font-medium">{profile.role}</span>{" "}
             specializing in <span className="text-[var(--color-acid)]">{profile.focus}</span>.
             {" "}{profile.yearsExperience}+ years shipping scalable systems across IT, education, logistics, HR, e-commerce and financial services.
           </p>
 
           {/* Meta row */}
-          <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-2 text-[12px] text-[var(--color-mute)]">
+          <div className="mt-5 flex flex-wrap items-center gap-x-3 sm:gap-x-4 gap-y-2 text-[11.5px] sm:text-[12px] text-[var(--color-mute)]">
             <span className="inline-flex items-center gap-1.5">
               <MapPin size={13} className="text-[var(--color-acid)]" />
               {profile.location}
             </span>
             <span className="h-1 w-1 rounded-full bg-[var(--color-line-2)]" />
-            <span>Indonesia Time · GMT+7</span>
+            <span>GMT+7</span>
             <span className="h-1 w-1 rounded-full bg-[var(--color-line-2)]" />
             <a href={profile.github} target="_blank" rel="noreferrer" className="hover:text-[var(--color-acid)] transition">
               @muhamadsechansyadat
@@ -158,7 +158,7 @@ export default function Hero() {
 
         {/* Profile card — photo inside the futuristic frame */}
         <div className="relative justify-self-center lg:justify-self-end fade-up" style={{ animationDelay: "0.1s" }}>
-          <div className="card-tilt relative h-[280px] w-[280px] lg:h-[320px] lg:w-[320px]">
+          <div className="card-tilt relative h-[240px] w-[240px] sm:h-[280px] sm:w-[280px] lg:h-[320px] lg:w-[320px]">
             <div className="relative h-full w-full rounded-2xl border border-[var(--color-line-2)] bg-[var(--color-surface)]/70 overflow-hidden backdrop-blur-sm">
               {/* Subtle grid + gradient inside frame */}
               <div className="absolute inset-0 bg-grid opacity-40" />

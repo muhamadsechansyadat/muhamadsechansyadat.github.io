@@ -4,7 +4,7 @@ export const profile = {
   role: "Software Engineer",
   focus: "Backend & Full Stack Development",
   location: "Indonesia",
-  availability: "Remote · Hybrid · On-Site",
+  availability: "On-Site · Hybrid · Remote",
   email: "muhamadsechansyadat@gmail.com",
   phone: "+62 882-1044-5417",
   linkedin: "https://linkedin.com/in/muhamad-sechan-syadat",

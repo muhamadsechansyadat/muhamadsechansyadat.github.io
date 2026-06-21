@@ -34,7 +34,10 @@ body {
     radial-gradient(1200px 600px at 80% -10%, rgba(182, 255, 60, 0.08), transparent 60%),
     radial-gradient(800px 500px at -10% 30%, rgba(74, 166, 39, 0.06), transparent 60%);
   background-attachment: fixed;
+  overflow-x: clip;
 }
+
+html { overflow-x: clip; }
 
 ::selection {
   background: var(--color-acid);
