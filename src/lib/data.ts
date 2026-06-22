@@ -142,6 +142,16 @@ const folderShots = (slug: string, count: number, ext: "png" | "webp") =>
 
 export const featuredProjects: Project[] = [
   {
+    slug: "shoesly",
+    title: "Shoesly — iOS Shoe Shopping App",
+    tagline: "SwiftUI sneaker shopping app with MVVM and async/await.",
+    description:
+      "SwiftUI-based iOS app for browsing and purchasing sneakers from top brands like Nike, Adidas, Jordan, and Puma. Features user onboarding, authentication, product browsing by brand and category, detailed product views with reviews, and an add-to-cart flow. Built with MVVM architecture and Swift's modern async/await concurrency.",
+    stack: ["Swift", "SwiftUI", "MVVM", "Async/Await"],
+    cover: "/portfolio/shoesly/shot-1.png",
+    shots: folderShots("shoesly", 14, "png"),
+  },
+  {
     slug: "apotech",
     title: "Plus Group Vending Machine Pharmacist",
     tagline: "Cross-platform desktop app for pharmacy vending operations.",
