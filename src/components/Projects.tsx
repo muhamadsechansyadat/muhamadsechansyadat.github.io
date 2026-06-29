@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { featuredProjects, otherProjects, type Project } from "@/lib/data";
+import { featuredProjects, type Project } from "@/lib/data";
 import SectionHeading from "./SectionHeading";
 import { ArrowUpRight, ChevronLeft, ChevronRight, Close } from "./Icon";
 
@@ -100,43 +100,6 @@ export default function Projects() {
           ))}
         </div>
 
-        {/* Other projects */}
-        <div className="mt-16">
-          <div className="text-[11px] uppercase tracking-[0.22em] text-[var(--color-mute)] mb-5 font-mono">
-            Also shipped
-          </div>
-          <div className="grid md:grid-cols-3 gap-px bg-[var(--color-line)] rounded-xl overflow-hidden border border-[var(--color-line)]">
-            {otherProjects.map((p) => (
-              <a
-                key={p.title}
-                href={p.url}
-                target="_blank"
-                rel="noreferrer"
-                className="group bg-[var(--color-ink-2)] p-5 lg:p-6 hover:bg-[var(--color-surface)] transition flex flex-col"
-              >
-                <div className="flex items-start justify-between gap-3">
-                  <h4 className="font-[family-name:var(--font-display)] text-[15px] font-semibold text-[var(--color-bone)] group-hover:text-[var(--color-acid)] transition">
-                    {p.title}
-                  </h4>
-                  <ArrowUpRight size={15} className="text-[var(--color-mute)] group-hover:text-[var(--color-acid)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition" />
-                </div>
-                <p className="mt-2 text-[12.5px] text-[var(--color-fog)] leading-relaxed flex-1">
-                  {p.description}
-                </p>
-                <div className="mt-3 flex flex-wrap gap-1.5">
-                  {p.stack.map((s) => (
-                    <span
-                      key={s}
-                      className="rounded-md border border-[var(--color-line)] bg-[var(--color-ink)]/60 px-2 py-0.5 text-[10.5px] text-[var(--color-fog)]"
-                    >
-                      {s}
-                    </span>
-                  ))}
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
       </div>
 
       {/* Project modal */}

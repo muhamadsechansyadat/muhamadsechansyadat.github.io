@@ -260,7 +260,6 @@ export const featuredProjects: Project[] = [
   },
 ];
 
-export const otherProjects = [];
 
 export const education = [
   {
