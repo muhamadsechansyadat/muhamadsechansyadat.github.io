@@ -7,7 +7,7 @@ export const profile = {
   availability: "On-Site · Hybrid · Remote",
   email: "muhamadsechansyadat@gmail.com",
   phone: "+62 882-1044-5417",
-  linkedin: "https://linkedin.com/in/muhamad-sechan-syadat",
+  linkedin: "https://www.linkedin.com/in/muhamad-sechan-syadat-30b264172/",
   github: "https://github.com/muhamadsechansyadat",
   cv: "/cv.pdf",
   yearsExperience: 5,
@@ -142,6 +142,27 @@ const folderShots = (slug: string, count: number, ext: "png" | "webp") =>
 
 export const featuredProjects: Project[] = [
   {
+    slug: "portal-dc",
+    title: "Portal DC — Data Center Management Platform",
+    tagline: "Full-stack platform for rack rental, billing, and asset management.",
+    description:
+      "End-to-end data center management platform covering rack leasing, billing, support ticketing, and asset management. Backend built with FastAPI and PostgreSQL using async SQLAlchemy, secured with JWT token rotation. Frontend built with Next.js 15 and TypeScript, featuring dark/light theme, data visualization, and full Docker containerization.",
+    stack: ["FastAPI", "Python", "PostgreSQL", "Next.js 15", "TypeScript", "Tailwind CSS", "Docker"],
+    cover: "/portfolio/portal-dc/shot-1.png",
+    shots: folderShots("portal-dc", 4, "png"),
+  },
+  {
+    slug: "plus-group",
+    title: "Plus Group — Corporate Website with CMS",
+    tagline: "Laravel-powered corporate site with a full CMS admin panel.",
+    description:
+      "Corporate website for Plus Group built with Laravel 12, PostgreSQL, and Docker. Includes a comprehensive CMS admin panel, Tailwind CSS frontend, Alpine.js interactions, and an async email queue system. Deployed to production at plusgroup.id.",
+    stack: ["Laravel 12", "PostgreSQL", "Tailwind CSS", "Alpine.js", "Docker"],
+    url: "https://plusgroup.id",
+    cover: "/portfolio/plus-group/shot-1.png",
+    shots: folderShots("plus-group", 5, "png"),
+  },
+  {
     slug: "shoesly",
     title: "Shoesly — iOS Shoe Shopping App",
     tagline: "SwiftUI sneaker shopping app with MVVM and async/await.",
@@ -161,6 +182,28 @@ export const featuredProjects: Project[] = [
     url: "https://vending-machine-pharmacist.vercel.app",
     cover: "/portfolio/apotech/shot-1.png",
     shots: folderShots("apotech", 8, "png"),
+  },
+  {
+    slug: "vokati",
+    title: "Vokati — Recruitment Platform",
+    tagline: "Multi-page recruitment platform with dynamic UI components.",
+    description:
+      "Multi-page recruitment platform built with HTML5, Bootstrap, and vanilla JavaScript. Features dynamic navigation, Toastr notifications, and Swiper carousel for a smooth candidate browsing experience.",
+    stack: ["HTML5", "Bootstrap", "JavaScript", "Swiper"],
+    url: "https://vokati.vercel.app",
+    cover: "/portfolio/vokati/shot-1.png",
+    shots: folderShots("vokati", 5, "png"),
+  },
+  {
+    slug: "sasana",
+    title: "Sasana Jiwa — Event Management Website",
+    tagline: "Multi-page event management site with clean responsive layout.",
+    description:
+      "Multi-page event management website built with HTML5, CSS3, and Bootstrap. Covers homepage, services, portfolio, and contact pages with a fully responsive layout.",
+    stack: ["HTML5", "CSS3", "Bootstrap"],
+    url: "https://sasana-jiwa.vercel.app",
+    cover: "/portfolio/sasana/shot-1.png",
+    shots: folderShots("sasana", 5, "png"),
   },
   {
     slug: "chaos-lab",
@@ -217,29 +260,7 @@ export const featuredProjects: Project[] = [
   },
 ];
 
-export const otherProjects = [
-  {
-    title: "Plus Group Website — Corporate Site with CMS",
-    description:
-      "Corporate website using Laravel 12, PostgreSQL, and Docker with Tailwind CSS, Alpine.js, a comprehensive CMS admin panel, and an async email queue system.",
-    stack: ["Laravel 12", "PostgreSQL", "Docker", "Tailwind", "Alpine.js"],
-    url: "https://plusgroup.id",
-  },
-  {
-    title: "Vokati — Recruitment Platform",
-    description:
-      "Multi-page recruitment platform using HTML5, Bootstrap, and vanilla JavaScript with dynamic navigation, Toastr notifications, and Swiper carousel.",
-    stack: ["HTML5", "Bootstrap", "JavaScript", "Swiper"],
-    url: "https://vokati.vercel.app",
-  },
-  {
-    title: "Sasana Jiwa — Event Management Landing",
-    description:
-      "Multi-page event management website built with HTML5, CSS3, and Bootstrap covering homepage, services, portfolio, and contact pages.",
-    stack: ["HTML5", "CSS3", "Bootstrap"],
-    url: "https://sasana-jiwa.vercel.app",
-  },
-];
+export const otherProjects = [];
 
 export const education = [
   {
